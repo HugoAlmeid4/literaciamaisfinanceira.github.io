@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html"><img src="/assets/logos/Group 4.png" alt=""></a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        
+        
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="pdfs.html">Pdfs</a></li>
+                <li id="ContactBtn"><a href="contacte-nos.html">contacte-nos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main  class="slide-up">
+        
+        <div class="error404">
+            <div class="text404">
+                <h2>PDFs</h2>
+                <h4>Erro 404</h4>
+                <h5>PDFs ainda não disponiveis</h5>
+            </div>
+            <img src="/assets/logos/Error404.png" alt="">
+    </main>
+
+<script>
+  const search = document.getElementById("search");
+  const list = document.getElementById("pdf-list").getElementsByTagName("li");
+
+  search.addEventListener("keyup", function () {
+    const text = this.value.toLowerCase();
+
+    for (let i = 0; i < list.length; i++) {
+      const item = list[i].innerText.toLowerCase();
+      list[i].style.display = item.includes(text) ? "" : "none";
+    }
+  });
+</script>
+
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active')
+        })
+    </script>
+    <footer>
+        
+    </footer>
+</body>
+</html>

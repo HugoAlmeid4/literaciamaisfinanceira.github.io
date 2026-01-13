@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html"><img src="/assets/logos/Group 4.png" alt=""></a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        
+        
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="pdfs.html">Pdfs</a></li>
+                <li id="ContactBtn"><a href="contacte-nos.html">contacte-nos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main  class="slide-up">
+        <h2>
+            Acerca.
+        </h2>
+        <p>
+            A MFJ é uma lista criada na Escola Josefa de Óbidos no âmbito da participação no Parlamento dos Jovens 2025/26, com o tema da literacia financeira. Surgiu da vontade de um grupo de alunos em promover mais conhecimento e responsabilidade financeira dentro da comunidade escolar. A lista é liderada pelo presidente Hugo Almeida e conta com a vice-presidente Íris e todo o resto da equipa, que juntos trabalhamos para desenvolver propostas claras, úteis e próximas da realidade dos estudantes.
+        </p>
+    </main>
+    
+    <footer>
+        
+    </footer>
+
+        <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
