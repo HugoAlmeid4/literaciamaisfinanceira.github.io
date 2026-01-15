@@ -5,4 +5,4 @@ Projeto **open source** de literacia financeira que disponibiliza **vídeos educ
 O objetivo é promover competências financeiras essenciais de forma **acessível, prática e pedagógica**, ajudando alunos a tomar decisões financeiras mais conscientes ao longo da vida.
 
 🔗 **Website do projeto:**  
-https://hugoalmeid4.github.io/literaciamaisfinanceira.github.io/index.html
+https://literaciamaisfinanceira.org
