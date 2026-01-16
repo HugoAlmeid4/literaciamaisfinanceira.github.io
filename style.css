@@ -395,3 +395,27 @@ html {
 body {
     -ms-overflow-style: none;
 }
+
+/* From a Youtube tutorial from optimistic web*/
+body{
+  color: #ffffff;
+  background: fixed
+      linear-gradient(#ffffff00, #ffffff00 6px, transparent 6px, transparent),
+    fixed linear-gradient(transparent, #fff 70%),
+    fixed
+      repeating-linear-gradient(
+        #ffffff,
+        #ff8800 1px,
+        transparent 1px,
+        transparent 40px
+      ),
+    fixed
+      repeating-linear-gradient(
+        to right,
+        #ffffff,
+        #ff8800 1px,
+        transparent 1px,
+        transparent 40px
+      )
+      rgba(255, 137, 2, 0.411);
+}
