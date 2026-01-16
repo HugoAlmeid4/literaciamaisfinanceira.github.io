@@ -3,29 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Literacia + Financeira</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html"><img src="assets/logos/Group 4.png" alt=""></a>
-            <button class="navbar-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        
-        
-            <ul class="navbar-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="acerca.html">Acerca</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="pdfs.html">Pdfs</a></li>
-                <li id="ContactBtn"><a href="contacte-nos.html">contacte-nos</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <main  class="slide-up">
         
@@ -41,46 +23,24 @@
         </div>
 
         <ul id="pdf-list">
-            <li><a href="assets/videos/Video Plataforma 1 - juros.mp4" target="_blank">Juros: Simples e compostos</a></li>
-            <li><a href="assets/videos/Video Plataforma 2 - Credito.mp4" target="_blank">Crédito</a></li>
-            <li><a href="assets/videos/video plataforma 3 - Orcamento Pessoal.mp4" target="_blank">Orçamento Pessoal</a></li>
-            <li><a href="assets/videos/Video plataforma 4 - Investimentos Basicos.mp4" target="_blank">Investimentos Básicos</a></li>
-            <li><a href="assets/videos/Video Plataforma 5 - Consumo consciente.mp4" target="_blank">Consumo Consciente</a></li>
+            <li><a href="/assets/videos/Video Plataforma 1 - juros.mp4" target="_blank">Juros: Simples e compostos</a></li>
+            <li><a href="/assets/videos/Video Plataforma 2 - Credito.mp4" target="_blank">Crédito</a></li>
+            <li><a href="/assets/videos/video plataforma 3 - Orcamento Pessoal.mp4" target="_blank">Orçamento Pessoal</a></li>
+            <li><a href="/assets/videos/Video plataforma 4 - Investimentos Basicos.mp4" target="_blank">Investimentos Básicos</a></li>
+            <li><a href="/assets/videos/Video Plataforma 5 - Consumo consciente.mp4" target="_blank">Consumo Consciente</a></li>
             
-            <li><a href="assets/videos/Video plataforma 6 - Poupança.mp4" target="_blank">Poupanças</a></li>
-            <li><a href="assets/videos/Video Plataforma 7 - Objetivos Financeiros.mp4" target="_blank">Objetivos Financeiros</a></li>
-            <li><a href="assets/videos/Video Plataforma 8 - Emergências Financeiras.mp4" target="_blank">Emergências Financeiras</a></li>
-            <li><a href="assets/videos/Video Plataforma 9 - Querer e Precisar.mp4" target="_blank">Querer e Precisar</a></li>
-            <li><a href="assets/videos/Video Plataforma 10 - Hábitos Financeiros Saudáveis .mp4" target="_blank">Hábitos Financeiros Saudáveis</a></li>
+            <li><a href="/assets/videos/Video plataforma 6 - Poupança.mp4" target="_blank">Poupanças</a></li>
+            <li><a href="/assets/videos/Video Plataforma 7 - Objetivos Financeiros.mp4" target="_blank">Objetivos Financeiros</a></li>
+            <li><a href="/assets/videos/Video Plataforma 8 - Emergências Financeiras.mp4" target="_blank">Emergências Financeiras</a></li>
+            <li><a href="/assets/videos/Video Plataforma 9 - Querer e Precisar.mp4" target="_blank">Querer e Precisar</a></li>
+            <li><a href="/assets/videos/Video Plataforma 10 - Hábitos Financeiros Saudáveis .mp4" target="_blank">Hábitos Financeiros Saudáveis</a></li>
 
         </ul>
     </main>
 
-<script>
-  const search = document.getElementById("search");
-  const list = document.getElementById("pdf-list").getElementsByTagName("li");
+    <script src="/javascript/search.js"></script>
+    <script src="/javascript/header.js"></script>
+    <script src="/javascript/headerloader.js"></script>
 
-  search.addEventListener("keyup", function () {
-    const text = this.value.toLowerCase();
-
-    for (let i = 0; i < list.length; i++) {
-      const item = list[i].innerText.toLowerCase();
-      list[i].style.display = item.includes(text) ? "" : "none";
-    }
-  });
-</script>
-    <script>
-        const navbarToggle = document.querySelector('.navbar-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
-        navbarToggle.addEventListener('click', () => {
-            navbarToggle.classList.toggle('active');
-            navbarMenu.classList.toggle('active')
-        })
-    </script>
-
-    <footer>
-        
-    </footer>
 </body>
-
 </html>
