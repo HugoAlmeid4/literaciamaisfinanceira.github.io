@@ -2,14 +2,34 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literacia + Financeira</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header"></div>
+        <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" aria-label="Literacia Mais Financeira - Home">
+                <img src="/assets/logos/Group 4.webp" alt="Literacia Mais Financeira Logo" fetchpriority="high">
+            </a>
+            <button class="navbar-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        
+        
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="pdfs.html">Pdfs</a></li>
+                <li id="ContactBtn"><a href="contacte-nos.html">contacte-nos</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main  class="slide-up">
         <h2>
@@ -20,9 +40,6 @@
         </p>
     </main>
     
-        <script src="/javascript/header.js" defer></script>
         <script src="/javascript/headerloader.js" defer></script>
 </body>
 </html>
-
-
