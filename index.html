@@ -55,23 +55,7 @@
 
     </main>
 
-<script>
-  // This function loads the reCAPTCHA script only when needed
-  function loadCaptcha() {
-    if (!window.grecaptcha) {
-      var script = document.createElement('script');
-      script.src = "https://www.google.com/recaptcha/api.js";
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-  }
-
-  // Listen for mouse movement, scroll, or touch to "wake up" the captcha
-  window.addEventListener('scroll', loadCaptcha, { once: true });
-  window.addEventListener('mousemove', loadCaptcha, { once: true });
-  window.addEventListener('touchstart', loadCaptcha, { once: true });
-</script>
     <script src="/javascript/headerloader.js" defer></script>
 </body>
 </html>
+
