@@ -51,6 +51,8 @@ margin-right:0
 
 .navbar img {
 width:250px;
+height: 90px;
+
 margin-top:15px;
 margin-left:0;
 transition:all .2s
@@ -361,6 +363,10 @@ font-weight:100
 }
 }
 
+#title-main-page {
+  font-size: 2.3rem;
+}
+
 .error404 h5 {
 font-weight:300
 }
@@ -404,9 +410,9 @@ body{
     fixed linear-gradient(transparent, #fff 70%),
     fixed
       repeating-linear-gradient(
-        #ffffff,
-        #ff8800 1px,
-        transparent 1px,
+        #ffffff,                       
+        #ff8800 1px,                   
+        transparent 1px, 
         transparent 40px
       ),
     fixed
