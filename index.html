@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://assets.mailerlite.com">
+    <link rel="preconnect" href="https://groot.mailerlite.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literacia + Financeira</title>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -15,13 +17,14 @@
         ml('account', '1414500');
     </script>
 </head>
-
+<body>
+    
     <div id="header"></div>
     
     <main  class="slide-up">
-        <h2 id="title-main-page">
+        <h1 id="title-main-page">
             Onde os alunos <br> aprendem sobre o <br> que realmente importa.
-        </h2>
+        </h1>
 
 
         <div id="emaildiv">
@@ -30,9 +33,24 @@
 
     </main>
 
+<script>
+  // This function loads the reCAPTCHA script only when needed
+  function loadCaptcha() {
+    if (!window.grecaptcha) {
+      var script = document.createElement('script');
+      script.src = "https://www.google.com/recaptcha/api.js";
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+  }
 
+  // Listen for mouse movement, scroll, or touch to "wake up" the captcha
+  window.addEventListener('scroll', loadCaptcha, { once: true });
+  window.addEventListener('mousemove', loadCaptcha, { once: true });
+  window.addEventListener('touchstart', loadCaptcha, { once: true });
+</script>
     <script src="/javascript/header.js" defer></script>
     <script src="/javascript/headerloader.js" defer></script>
 </body>
 </html>
-
